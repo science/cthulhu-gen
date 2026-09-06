@@ -68,8 +68,8 @@ nothing while the oasis burned. Here's the answer, invented for this run:
   source's "altar with a golden pyramid upon it" in **9p (Tomb of Sia)** is that relic here:
   reflavor it as **Sia's Coal**, a fist-sized golden reliquary that still holds a lit ember
   after centuries (Doorne doesn't let his own fire die). Carrying it back to the temple and
-  placing in on the Ember-altar, spoken over by anyone who genuinely means a prayer to
-  Doorne (a cleric, a paladin, Jiyloo, or just someone willing to mean it), relights it.
+  placing in on the Ember-altar with words spoken over by anyone who genuinely means a prayer
+  to Doorne (a cleric, a paladin, Jiyloo, or just someone willing to mean it) will relight it.
 - **If it's relit before the patrol returns:** when Ashiq and the retrieval patrol arrive,
   Doorne answers — see the round-by-round guide below. This turns the climax from a second
   dungeon's worth of Fanatics into a real payoff for a side quest, without taking the fight
