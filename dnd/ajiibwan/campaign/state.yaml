@@ -8,13 +8,16 @@
 
 campaign: "Deserts of Ajiibwan"
 run: "game-2"          # the reset playthrough with new players
-status: "in-play — first designed session: The Tinkerer's Strings (Kantaroz)"
+status: "in-play — 3 sessions played (see campaign/sessions/01-03.md); Kantaroz tower NOT yet entered; Jeffrol captured and in tow at Elmingwed's gate"
 
 # --- Party ------------------------------------------------------------------
-# Active table: 4 PCs at level 1 (Orkideh is central to the current adventure).
-# Timiki & Hasochi are additional game-2 PCs who may rotate in.
+# Active table: 4 PCs at level 2 (Orkideh is central to the current adventure).
+# Possible future scale: if Jeffrol ends up staying with the party (rather than handed
+# over/sent away), the ongoing outfit becomes 5 PCs (incl. Tath'Shar) + Jiyloo + Jeffrol =
+# a 7-body party. Enemy stat blocks in scenarios/the-tinkerers-strings.md were tuned
+# smaller — scale up if that's where session 4 lands.
 party:
-  level: 1
+  level: 2
   size: 4
   members:
     - name: "Ren"        # player: Toan
@@ -26,17 +29,30 @@ party:
       notes: >
         Former criminal partner of the captive Jeff (Jeffrol Giltor). Cut a deal with
         Elmingwed to hand Jeff over for half the proceeds of his loot. Carries a hidden,
-        unprovable secret — see thread:orkideh-secret. The leash on her player runs through
-        Jeff, who cannot be safely silenced.
+        unprovable secret — see thread:orkideh-secret (now ACTIVE — Jeff already told his
+        side in session 3). The leash on her player runs through Jeff, who cannot be safely
+        silenced.
     - name: "Lia"        # player: Ania
       race: "Tiefling"
     - name: "Gereon"     # player: Mia
       race: "Dwarf"
-    # Additional game-2 PCs who may rotate in (table runs 4 at a time):
-    - name: "Timiki"     # player: Briar
+    # Additional game-2 PCs who may rotate in (table runs 4-5 at a time):
+    - name: "Tath'Shar"  # player: Phoenix — NEW as of session 4 (2026-09-06); replaces the one-off Hasochi
+      race: "Drow"
+      notes: >
+        Gender-neutral, trans; they/them pronouns ONLY — do not default to she/her.
+        Rogue from a rich family; glamoured studded leather worn as ordinary clothing (DC
+        check after a long rest to notice); casts Thaumaturgy in place of the usual drow
+        Dancing Lights. Carries a letter of introduction to Elmingwed, and receives from him
+        a second letter for Tsendur at Durgan's Rest (real content — warns of Maghiel
+        hunting "prohibited artifacts"; see scenarios/elmingweds-web.md Scene 2). Their
+        sibling is [[npc:maghiel]] (she/her) — they believe Maghiel is active in the region
+        and want to find/stop her. GM-ONLY: in this reset
+        timeline Maghiel is NOT yet Black-Thorn-cursed — see
+        scenarios/mishap-at-durgans-rest.md for the origin event this is building toward.
+    - name: "Timiki"     # player: Briar — one-off guest in session 3, attendance for session 4 unconfirmed
       bench: true
-    - name: "Hasochi"    # player: Phoenix
-      bench: true
+      notes: "Guest appearance session 3 (caught the fleeing Jeff). Not confirmed for session 4."
 
 # Permanent / recurring NPCs traveling with the party
 companions:
@@ -49,28 +65,39 @@ companions:
 # Captive in tow (not a companion — a live problem)
 captives:
   - name: "Jeffrol Giltor"
-    ref: "[[npc:jeff-giltor]]"   # see scenarios/the-tinkerers-strings.md dossier
+    ref: "[[npc:jeff-giltor]]"   # see scenarios/the-tinkerers-strings.md dossier (tower content still unplayed)
     aka: "Jeff"
     race: "Half-orc / half-elf"
     sheet: "level 1 Rogue"
-    status: "Captured at Kantaroz tower, coming out with loot. Bargaining for his life and freedom."
+    status: >
+      Captured at his camp near the Kantaroz tower, session 3, after he and his mercenaries
+      emerged from a day inside it (see campaign/sessions/03.md — the party ambushed them at
+      the camp, not inside the tower). Hauled to Tel A'bib; at Elmingwed's compound gate,
+      not yet handed over. His pockets are empty: he sank the stolen operating money in
+      a speculative camel-trade venture now en route to the Granite Empire, ~8-9 weeks out.
+      Bargaining for his life and freedom. If he ends up staying with the party rather than
+      being handed over, the ongoing outfit scales to 7 (see party note above).
     combat: "Wildcard — may fight on the wrong side if loose, or sit tied up (then the party is a body down). Affects balance; the GM accepts that."
 
 # --- Where & when -----------------------------------------------------------
 location:
   region: "[[region:tel-abib-near-desert]]"
-  site: "Kantaron Summit — exterior of the Kantaroz tower ([[loc:kantaron]])"
-  situation: "Party has just captured Jeff outside the tower; Jiyloo present. The tower (the Tinkerer's Workshop) looms unentered."
+  site: "Tel A'bib — the gate of Elmingwed's compound ([[npc:elmingwed]])"
+  situation: >
+    Session 3 ended here: Jeffrol in tow, not yet handed over. Session 4 (2026-09-06) opens
+    on this threshold. See scenarios/elmingweds-web.md for the planned session.
 
 clock:
-  in_world_day: 1               # reset run starts fresh; advance from here
+  in_world_day: 1               # still day 1 of the reset run's tracked clock; refine once dilation is applied session-by-session
   # Time dilation is handled NARRATIVELY between adventures, not with a factor: when the
   # party returns to Tel A'bib, ~6 weeks pass before the next adventure (game 1 used ~2).
   # That downtime gap is when autonomous threads (threads.yaml) tick.
   between_adventure_gap: "~6 weeks at Tel A'bib"
 
-milestones: []                  # populate as the party hits them
+milestones:
+  - "Session 3: Jeffrol captured (thread:jeff-fate active; disposition still undecided)."
 
 # --- Bookkeeping ------------------------------------------------------------
-last_session: null              # set to sessions/NN.md after first play
+last_session: "campaign/sessions/03.md"
 open_threads_file: "campaign/threads.yaml"
+inventory_file: "campaign/inventory.yaml"

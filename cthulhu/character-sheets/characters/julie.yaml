@@ -1,0 +1,166 @@
+--- # Call of Cthulhu 7e — Investigator Backstory Metadata
+# Ported from the original "Journalist" in-person handout for *The Haunting
+# (House of Corbitt)*. Prose reworded into third person from the source sheet
+# (which was second person, as written for the player) to match this folder's
+# other sheets; reference-only sections (career_arc, keeper_notes) synthesized
+# from that prose. Surname "Thorne" supplied to complete the masthead — the
+# source names only her editor, surgeon, and detective contact, never the PC.
+
+meta:
+  schema_version: 1
+  ruleset: "Call of Cthulhu 7th Edition"
+  setting: "New England, 1921 (classic era)"
+  role: "Player Character — The Haunting pregen (Journalist)"
+
+identity:
+  legal_name: "Julie Thorne"
+  known_as: ""                            # none in the source
+  stage_name: ""                          # not a performer — masthead falls back to legal name
+  billing: "Investigative Reporter · The Boston American"
+  sex: "Female"
+  age: 28
+  born: 1893
+  occupation: "Newspaper reporter (investigative)"
+  residence: "Boston, Massachusetts (a cramped third-floor walk-up on Beacon Hill)"
+  status: "Working press — a byline the powerful have learned to watch"
+
+# Reference-only (NOT rendered). Synthesized from the source backstory prose to
+# keep downstream edits consistent — no new hard facts invented.
+career_arc:
+  origin: >
+    Trained as a nurse and served in French field hospitals in the Great War,
+    driving a Ford Model T ambulance through mud and shellfire. Came home
+    determined never to be part of the machinery that printed sanitized nonsense
+    over what she'd seen, and talked her way onto a real newspaper beat when
+    every editor wanted her writing society columns.
+  current_standing: "A respected investigative reporter at the Boston American — protected by her editor, resented by the people her stories expose."
+  unreached_ambition: "To break the story that actually forces the powerful to answer for it."
+  current_mood: >
+    Restless and watchful. She sleeps poorly and leaves the light on, and she
+    cannot let a closed case stay closed.
+
+backstory:
+
+  personal_description: >
+    A woman of 28 with sharp, dark eyes that people tend to remember. She keeps
+    her chestnut hair bobbed short — a habit from France, where long hair was a
+    liability under a nurse's cap. She dresses smartly but practically, favoring
+    pockets over fashion. There is something in the way she carries herself —
+    shoulders squared, gaze steady — that belongs to someone who has seen worse
+    than whatever is in front of her right now.
+
+  ideology_beliefs: >
+    She believes the truth is a public right, not a private commodity. She
+    watched men die in French field hospitals while newspapers back home printed
+    sanitized nonsense, and she swore she'd never be part of that machinery. The
+    powerful rely on silence and ignorance. A well-placed story is more dangerous
+    to them than any bullet. She doesn't trust institutions — not the church,
+    not the government, not the police — but she trusts people's capacity to act
+    when they finally know what's really going on.
+
+  significant_people:
+    - name: "Clara Marsh"
+      relation: "Editor & protector"
+      desc: >
+        Julie's editor at the Boston American, a razor-tongued woman in her
+        fifties who gave her her first real assignment when every other editor
+        told her to write society columns. She protects Julie from the publisher
+        when her stories make the wrong people uncomfortable. Julie owes her her
+        career.
+    - name: "Dr. Helen Royce"
+      relation: "Wartime comrade (surgeon)"
+      desc: >
+        A surgeon Julie served alongside at a casualty clearing station near
+        Compiègne. She taught Julie triage, how to drive a Ford Model T
+        ambulance through mud and shellfire, and how to keep her hands from
+        shaking afterward. They write to each other monthly. She practices
+        medicine in Philadelphia now but drinks too much. Julie worries about
+        her.
+    - name: "Thomas Gable"
+      relation: "Police contact (uneasy)"
+      desc: >
+        A detective with the Boston Police Department who feeds Julie tips when
+        cases stink of cover-up. The relationship is transactional and uneasy.
+        He has his own reasons for wanting certain things exposed, and she
+        hasn't figured out all of them yet.
+
+  meaningful_locations:
+    - name: "The morgue at the Boston American"
+      desc: >
+        The newspaper's clippings archive in the basement, rows of filing
+        cabinets stuffed with yellowed articles, photographs, and obituaries
+        going back decades. She spends more time down here than at her desk
+        upstairs. The clerk, old Murray, saves things he thinks she'll want and
+        never asks why she's pulling files on cases the police closed years ago.
+    - name: "The field outside Compiègne, France"
+      desc: >
+        She hasn't been back, but she sees it when she closes her eyes. The
+        sound of the ambulance engine, the smell of wet canvas and antiseptic.
+        It was the worst place she's ever been, and also the place where she
+        became whoever she is now.
+    - name: "Her apartment on Beacon Hill"
+      desc: >
+        A cramped third-floor walk-up with a typewriter by the window, a fire
+        escape she occasionally uses as a reading nook, and a lock on the door
+        she replaced herself after someone tried the handle one night following
+        a story about a city councilman.
+
+  treasured_possessions:
+    - name: "A battered leather satchel"
+      desc: >
+        The satchel she carried through France. One clasp is broken and she's
+        re-stitched the strap twice. Inside, she keeps her notebook, pencils,
+        press credentials, and a small brass compass Helen gave her the night
+        before she drove her first ambulance run alone in the dark. The compass
+        doesn't point true north anymore. She keeps it anyway.
+
+  character_traits:
+    - "Asks too many questions and never the polite ones"
+    - "Has a disarming smile that she deploys strategically — people tell her things before they realize they've done it"
+    - "Quiet when she needs to be; she's learned to move through spaces without drawing attention, a skill born partly from war and partly from being a woman in rooms where women are not expected"
+    - "Keeps her promises and doesn't forgive easily"
+    - "A habit of picking locks, palming small objects, and reading documents upside-down on other people's desks — skills she describes as \"professional development\""
+    - "Sleeps poorly and leaves the light on"
+
+# --- Everyday carried kit (source: "Gear & Possessions") -----------------------
+inventory:
+  gear:
+    - item: "Reporter's notebook"
+      desc: "Half-filled, plus two spare pencils and a self-filling fountain pen with blue-black ink."
+    - item: "Press credentials"
+      desc: "From the Boston American, slightly dog-eared."
+    - item: "Lockpick set"
+      desc: "Two tension wrenches and three picks, rolled in a strip of cloth and tucked in the satchel's inner lining."
+    - item: "Small hand mirror"
+      desc: "Compact, round, fits in a palm."
+    - item: "Pocket flashlight"
+      desc: "An Eveready tubular model, nickel-plated, with one spare battery."
+    - item: "Matches & a half-pack of cigarettes"
+      desc: "She doesn't really smoke — they're for making other people comfortable enough to talk."
+    - item: "Small first aid tin"
+      desc: "Gauze, adhesive plaster, a bottle of iodine, scissors, safety pins."
+    - item: "Length of sturdy twine"
+      desc: "About twenty feet, wound tight in her coat pocket."
+    - item: "Hip flask"
+      desc: "Silver-plated, dented, containing decent whiskey procured through channels she doesn't discuss."
+    - item: "City map of Boston"
+      desc: "Annotated in her own handwriting with circled addresses, question marks, and crossed-out names from old investigations."
+
+# --- Wealth & means ------------------------------------------------------------
+wealth:
+  spending_level: "Average — $10.00/day"
+  cash: "$60.00"
+  assets: "$200.00"
+
+# Injuries & Scars, Phobias & Manias, Arcane Tomes & Spells, and Encounters with
+# Strange Entities were all "(None)" on the source sheet — omitted here so the
+# renderer prints them as blank, ruled fill-in space to accrue over play.
+
+# --- Keeper notes (NOT rendered on the player sheet) ---------------------------
+keeper_notes:
+  hooks:
+    - "Thomas Gable feeds her tips for reasons she hasn't fully worked out — a ready-made way to pull her into a case, and a thread that can turn on her."
+    - "Someone tried her apartment door after a story on a city councilman; the crossed-out names annotated on her Boston map are a bag of ready on-ramps."
+    - "France is unresolved trauma (poor sleep, light left on) — a lever for horror, and the root of her bond with Dr. Helen Royce."
+  suggested_skills_flavor: ["Library Use", "Persuade", "Fast Talk", "Locksmith", "Sleight of Hand", "Spot Hidden", "Listen", "Psychology", "First Aid", "Drive Auto"]
+  note: "Numeric stats/skills intentionally omitted — this file is backstory metadata only. Ported from the original 'Journalist' handout for The Haunting (House of Corbitt)."

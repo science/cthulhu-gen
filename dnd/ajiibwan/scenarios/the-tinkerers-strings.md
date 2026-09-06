@@ -2,16 +2,27 @@
 ### Kantaron Summit — the Kantaroz tower / Tinkerer's Workshop
 *A level-1 sandbox adventure for the Deserts of Ajiibwan (game-2 reset).*
 
-> **At the table:** 4 PCs at **level 1**, plus **Jiyloo** (NPC, level 1 Barbarian — the
-> front-line muscle) and the captive **Jeff** (level 1 Rogue — a combat wildcard who may
-> fight on the wrong side or sit tied up). The GM paces fights by adjusting HP on the fly
-> (easy→hard→medium across the session), so the stat blocks below are reference, not gospel
-> — don't sweat exact DCs.
+> **At the table:** as of session 3 the party is **level 2**, and could be as large as
+> 5 PCs (incl. Tath'Shar) + **Jiyloo** (NPC, level 1 Barbarian — front-line muscle) + a
+> rejoined **Jeff** (level 1 Rogue — a combat wildcard, if he's still with the party by
+> the time this session runs) — a 7-body outfit. Scale enemy HP/numbers up from the stat
+> blocks below if so; the GM paces fights by adjusting HP on the fly (easy→hard→medium
+> across the session) either way, so treat the numbers as reference, not gospel — don't
+> sweat exact DCs.
 >
 > Built from the Adventure Template (trimmed). Canon notes: **Durel is alive** here (the
 > reanimated "Duroigh" was a prior-run end-state); the **Balor, Nalfeshnee, is incomplete**
 > — the party fights an immature body + the summoning apparatus, *not* a CR-19 demon;
 > **Maghiel is off-screen.**
+>
+> **STATUS (post-session-3):** Jeff's capture and Scene 1 (the interrogation/bargain)
+> already happened at the table — see `campaign/sessions/03.md`. What's still ahead, for
+> whenever the party actually returns to Kantaron: Scenes 2–6, entering and delving the
+> tower itself. Jeffrol's crew spent a day inside before the party caught them (default
+> assumption: they reached the ground floor and Durel's quarters, grabbed the spider
+> bracelet and light valuables, but never found the hidden stair or the warded lab —
+> adjust if your table wants otherwise). The library, storage floor, Durel, and the
+> summoning apparatus are all still untouched.
 
 **Dramatic question:** *Everyone at Kantaron is on someone's strings — Durel on the
 demon's, Jeff on his own lies, Orkideh on her past. Whose strings do you cut, and what
@@ -35,9 +46,10 @@ thread:jeff-fate · thread:orkideh-secret · thread:kantaron-summoning
 
 Guided by **Jiyloo** (hired by the merchant-magnate **Elmingwed**), the party tracked
 **Orkideh's** old criminal partner — **Jeffron Giltor**, "Jeff," a half-orc/half-elf — to
-**Kantaron Summit**, and caught him slipping out of an ancient **Bokkaran tower
-(Kantaroz)** with loot in his pack. *(That capture has already happened — the session opens
-with Jeff trussed and the tower still unentered.)*
+**Kantaron Summit**, where he and his mercenaries spent a day inside an ancient
+**Bokkaran tower (Kantaroz)** and the party ambushed them at their camp as they emerged,
+loot in hand. *(That capture has already happened, session 3 — see the STATUS note above.
+The tower interior was breached by Jeffrol's crew, not the party.)*
 
 The tower is the **Tinkerer's Workshop**. Its sole resident, the artificer-magician
 **Durel**, learned to command the site's ancient Bokkaran **constructs** and sends them
@@ -380,15 +392,19 @@ in. (Flip thread:orkideh-secret to `active` if it lands.)
 Hand these out as **described objects, not stat blocks** (world rule —
 `lore-and-mysteries.md` → *Item identification & the old-school convention*).
 
-- **The white-metal spider bracelet** *(on Jeff)* — "a heavy bracelet of pale metal,
-  wrought as a long-legged spider." Attune and you learn only that it's *magical*. *(It
-  wards the Sea of Souls' unseen water — [[item:spider-bracelets]]. Save the reveal for
+- **The white-metal spider bracelet** — ~~*(on Jeff)*~~ **already recovered in session 3**
+  (see `campaign/inventory.yaml`, in the strongbox, unidentified) — don't re-award it. "A
+  heavy bracelet of pale metal, wrought as a long-legged spider." Attune and you learn only
+  that it's *magical*. *(It wards the Sea of Souls' unseen water — [[item:spider-bracelets]].
+  Save the reveal for
   when they reach the Sea of Souls: a Chekhov's gun.)*
 - **The white-metal dagger (+1)** *(3rd floor)* — beautiful, ancient Bokkaran masterwork;
   modest gold value but **hard to sell locally** (too fine; draws attention). Jiyloo says
   keep it quiet. Full description in Scene 4.
 - **Bokkaran scrolls** (2nd-floor library), in Bokkaran — castable only by a reader of
-  Bokkaran, or learnable with magic training: *Mending, Encode Thoughts, Alarm* (cantrips);
+  Bokkaran, or learnable with magic training. ~~*Mending, Encode Thoughts, Alarm*
+  (cantrips)~~ **already in the party strongbox (`campaign/inventory.yaml`), from
+  Jeffrol's mercenary camp in session 3 — don't duplicate.** Remaining/available here:
   *Catapult* (3rd, or 1st for a true sorcerer), *Find Familiar, Blur* (1st).
 - **Alchemical & lab supplies**; Bokkaran lore tomes (fuel toward literacy/training).
 - **Construct crystal-brains** — each holds an **enslaved soul.** Breaking one kills the

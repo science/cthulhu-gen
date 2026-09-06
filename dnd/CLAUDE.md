@@ -132,6 +132,11 @@ game-1 start state (see principle 1):
   **and an autonomous-progression note** (what the faction/thread does on its own each world
   tick if the party ignores it — principle 2).
 - `sessions/NN.md` — one recap per session (what the players actually did).
+- `inventory.yaml` — party loot tracker, split into `strongbox` (shared/fungible loot,
+  visible to the whole table, no possession fights — sellable junk, raw materials,
+  not-yet-claimed items) and `assigned` (items needing clear individual possession — worn/
+  wielded gear, unique magic items, anything a wildcard NPC could plausibly steal back).
+  Default new loot to the strongbox unless a PC is actively using/wearing it.
 - `entities/{npcs,locations,factions,monsters}/*.yaml` — structured records, consistent
   with the `cthulhu/character-sheets` YAML style; prose lives in markdown.
 
@@ -157,3 +162,48 @@ When asked to build the next scenario:
    creation on art.
 7. **Close the loop after play.** Add a `sessions/NN.md` recap and update `state.yaml` /
    `threads.yaml` so the next design starts from accurate state.
+
+## Printable stat blocks (combat reference)
+
+When a scenario's encounters are set, add a `## Combat reference` section to that scenario's
+`.md` file (near the relevant scene beat, or grouped before Rewards). Confirmed working
+end-to-end: Steve pastes the scenario markdown into Google Docs with "paste as markdown"
+(tables/bold/bullets all render natively), then copies the rendered table straight into his
+combat-tracking spreadsheet, where it lands as tab-separated cells. Up to three parts per
+encounter:
+
+- **Tracker table** — one row per creature *instance* (three zombies = three rows), fixed
+  column order: `Name | AC | Init Mod | HP | Hit Mod | Dmg Die | Dmg Mod`.
+- **Reference card** — one entry per creature *type* (not per instance), bolded trait names,
+  each written as what the trait *does in combat* (when it triggers, what to warn players
+  about), not restated SRD flavor text. This is what gets read from at the table; it can
+  carry the full, accurate math even when the tracker simplifies it (below).
+- **Round-by-round GM guide** — only for encounters with a scripted timeline (an ambush, a
+  villain who flees on a fixed schedule, a hazard that escalates on its own). Bold round
+  headers, 1-2 sentences of what's happening, then a bolded **Your move:** line — that bolded
+  line is the thing to be scannable mid-session, everything else is context if needed.
+
+**Damage encoding — single die type only.** The tracker sheet only rolls one die type per
+hit (no code path for compound expressions like `1d6+1d4`). So:
+- `Dmg Die` is always a bare die *size* for a single die — `6`, `8`, `10`, `12`, `20` — never
+  a full expression like `1d6` or `2d8`.
+- Simple single-die damage (`1d8+3`) maps over exactly: `Dmg Die 8`, `Dmg Mod +3`.
+- **Always-on compound damage** (multiple dice/types that apply on literally every hit, e.g.
+  a weapon die plus a fire-damage rider) gets approximated: pick the single die size whose
+  average is closest to the true average total, then nudge `Dmg Mod` by ±1-2 to close the
+  remaining gap. Worked example: the Scorch Zombie's real Slam is `1d6+1` bludgeoning +
+  `1d4` fire (average ≈7) → tracker row uses `Dmg Die 10`, `Dmg Mod +2` (average 7.5).
+- **Conditional/situational bonus damage** (Sneak Attack, a bonus-action extra swing that's
+  only available some rounds, a buff spell) is the opposite case: leave it **out** of the
+  row entirely and call it out in the reference card instead, so Steve adds it by hand only
+  on the rounds it actually applies — folding it into the row's average would silently
+  overstate every other hit.
+- **Multiattack** (the same attack profile rolled more than once on a turn) doesn't need a
+  new column: the row already encodes one attack, so the reference card just notes the
+  attack count ("makes two unarmed strikes") and Steve rolls that row twice.
+- **Classed NPCs (not monsters)** — spellcasters, PC-statted villains/lieutenants with full
+  class features — can't be reduced to one row at all. Give the tracker row their single
+  *default* attack (whichever weapon/cantrip they'd reach for absent a reason to do
+  otherwise), and put everything else — the spell list, tactics/turn order, reactions, class
+  features — in the reference card prose only. The row exists so the NPC has *a* number to
+  roll each round it's in melee/ranged range, not a summary of what they do.

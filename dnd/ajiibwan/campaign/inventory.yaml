@@ -1,0 +1,39 @@
+# inventory.yaml — live party loot tracker for the game-2 run.
+#
+# Two pools:
+#   strongbox: shared, fungible/general loot. Visible to the whole table; any PC can pull
+#     from it in the fiction without a scene about who "gets" it. This is where sellable
+#     junk, stacks of resources, and not-yet-claimed curiosities live.
+#   assigned:  items that need CLEAR individual possession — usable gear a PC is actively
+#     wielding/wearing, unique magic items, anything where "who has it" matters mechanically
+#     or dramatically (e.g. a wildcard NPC could steal it back). Give these an owner.
+#
+# Update after each session (methodology step 7, alongside sessions/NN.md).
+
+strongbox:
+  - item: "White-metal spider bracelet"
+    source: "Taken off Jeffrol when he and his mercenaries emerged from the Kantaroz tower, session 3"
+    note: >
+      Unidentified by the party — old-school rule, no reveal from attuning alone (see
+      lore-and-mysteries.md → item identification convention). GM-ONLY TRUTH (ref
+      item:spider-bracelets, thread:sea-of-souls-water): a Bokkaran ward against the Sea of
+      Souls' unseen water — specifically it prevents the wearer succumbing to sleep while
+      in the Sea of Souls. Payoff held for when the party reaches the Sea of Souls arc.
+  - item: "Bokkaran scrolls — Mending, Encode Thoughts, Alarm"
+    source: "Jeffrol's mercenary camp, session 3"
+    note: "Unusable until someone learns to read Bokkaran, or a magic-trained PC studies them."
+  - item: "Herbs & alchemical resources"
+    source: "Jeffrol's mercenary camp, session 3"
+    note: "Raw materials — not consumables in hand yet."
+  - item: "Broken swords, torn armor, misc. equipment"
+    source: "Jeffrol's mercenary camp, session 3"
+    value: "~12 gp (sale/salvage value, not usable as-is)"
+
+assigned: []
+  # e.g. - item: "White-metal dagger (+1)"
+  #        owner: "Ren"
+  #        source: "..."
+  #        note: "Attuned/wielded — clear individual possession."
+
+# --- Bookkeeping --------------------------------------------------------
+last_updated: "campaign/sessions/03.md"

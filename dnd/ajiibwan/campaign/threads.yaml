@@ -11,11 +11,15 @@ threads:
     title: "What to do with Jeff"
     status: active
     summary: >
-      Jeffrol Giltor is captured and bargaining. He'd rather join the party than be
-      returned to Elmingwed (whom he fears). Options on the table: hand him to Elmingwed
-      (collect the deal), keep him as a leashed/hostile passenger, send him back escorted
-      by Jiyloo (losing the party's muscle), or kill him.
-    leverage: "He holds (and claims to hold) a secret dangerous to Orkideh — see thread:orkideh-secret."
+      Jeffrol Giltor was captured at his camp near Kantaroz (session 3, not inside the
+      tower) and hauled to Tel A'bib — the party is at Elmingwed's gate with him, decision
+      pending as session 4 opens. He'd rather join the party than be handed over (whom he
+      fears). His stolen operating money is gone — sunk into a speculative camel-trade
+      venture now ~8-9 weeks out toward the Granite Empire — so he has no coin to offer,
+      only information and labor. Options on the table: hand him to Elmingwed, keep him as
+      a leashed/hostile passenger, send him off on a caravan (Elmingwed's Sept-4 offer),
+      or kill him.
+    leverage: "He holds (and claims to hold) a secret dangerous to Orkideh — see thread:orkideh-secret. He has already used it once, in session 3."
     autonomous:
       - "If returned to Elmingwed alive: Jeff talks/negotiates his way loose within a tick or two and resurfaces later as a rival/operator — and Elmingwed is now in his debt-orbit, not the party's."
       - "If kept with the party: he watches for a betrayal opening (steal back the bracelet, slip his bonds, sell the party's plans) the moment odds favor him."
@@ -23,7 +27,7 @@ threads:
 
   - id: thread:orkideh-secret
     title: "Orkideh & Jeff's fraud against the Vanic Navy"
-    status: dormant     # becomes active the moment Jeff starts talking
+    status: active     # Jeff already talked in session 3 — the bind is live at the table now
     summary: >
       Orkideh and Jeff ran a sisal/jute-for-abacA fiber-substitution scam: sell cheap
       fiber as premium maritime cable/hawser to the Vanic Imperial Navy and be long gone
@@ -39,6 +43,12 @@ threads:
       time it goes to the Boetharch of Tel A'bib ([[npc:boetharch]]). The papers implicate
       Elmingwed too — but he's untouchable (weekly lunch with the Boetharch). The real
       target is Orkideh, especially once the Boetharch knows she's in the area.
+      SESSION 4 DEVELOPMENT (scenarios/elmingweds-web.md): with Jeff now delivered to his
+      own doorstep, Elmingwed is positioned to lean on "no lower merchant crosses me" and
+      simply collect the packet himself — GM's call whether he already has it (leverage
+      lands immediately) or is one step from getting it (a last window for the party to
+      intervene). Either way this converts thread:jeff-fate's cash payoff into a service
+      obligation, since Jeff's actual coin is tied up (see thread:jeff-fate).
     autonomous:
       - "Jeff will use it as currency — revealing it to the party to drive a wedge and buy his life — but will never name the merchant holding the packet."
       - "If the deposit ever reaches the Boetharch, an investigation/warrant simmers toward Orkideh over the following weeks; a future Tel A'bib visit gets dangerous for her."
@@ -65,8 +75,11 @@ threads:
     summary: >
       The Kantaroz basement is a wellhead of the unseen water that fills the distant Sea
       of Souls (Bokkaran leyline tech draining to a facility near Tel A'bib). FLAVOR/MYSTERY
-      only for now — at level 1 it has no mechanical consequence; it's a seed for a later
-      Sea-of-Souls arc and explains the spider bracelet's purpose.
+      only for now — no mechanical consequence yet; it's a seed for a later Sea-of-Souls arc.
+      The party already holds one **spider bracelet** (session 3, off Jeffrol — see
+      campaign/inventory.yaml), unidentified. GM-ONLY TRUTH: it wards against the Sea of
+      Souls' unseen water, specifically preventing the wearer from succumbing to sleep
+      there. Save the reveal for when the party actually reaches the Sea of Souls.
     autonomous:
       - "Inert for now. The connection only matters once the party engages the Sea of Souls in a future adventure."
 
@@ -76,10 +89,36 @@ threads:
     ref: "[[npc:elmingwed]]"
     summary: >
       Elmingwed — powerful by wealth and connections, not by levels — pre-bought half of
-      Jeff's value sight-unseen and hired Jiyloo to deliver the party. How the party
-      handles Jeff sets the relationship.
+      Jeff's value sight-unseen and hired Jiyloo to deliver the party. Jeff arrives with the
+      party at his gate (session 3 cliffhanger) but with empty pockets (see thread:jeff-fate)
+      — so session 4 is where Elmingwed converts the debt into a service ask rather than a
+      cash payout: cooperative work reopening the [[loc:oasis-of-sia]] trade route, or
+      splitting the party (Jeff onto a caravan out; the rest carrying a message to
+      [[npc:tsendur]] at [[loc:durgans-rest]]). See scenarios/elmingweds-web.md.
     autonomous:
-      - "Elmingwed's interests (and his militia captain, [[npc:abet]]) keep moving regardless. A dead Jeff or a stiffed deal cools the patronage; delivering Jeff (or his loot) warms it and opens further business."
+      - "Elmingwed's interests (and his militia captain, [[npc:abet]]) keep moving regardless. A dead Jeff or a stiffed deal cools the patronage; delivering Jeff (or his loot, or labor in lieu of it) warms it and opens further business."
+
+  - id: thread:tathshar-maghiel
+    title: "Tath'Shar's search for their sister"
+    status: dormant     # activates on introduction, session 4; see scenarios/mishap-at-durgans-rest.md for the GM-only truth this unlocks
+    ref: "[[npc:maghiel]]"
+    summary: >
+      Tath'Shar (new PC, session 4; they/them — gender-neutral, trans) is a Drow noble who
+      received a letter of introduction FROM Elmingwed TO Tsendur (not just a courtesy
+      letter — it warns Tsendur that Maghiel hunts "prohibited artifacts"). Their real
+      purpose: they believe their sister Maghiel (she/her) is active in the region and want
+      to find/organize against her before she goes further down that path. CORRECTED
+      WORLD-TRUTH for this reset run (overrides
+      world/entities.yaml's prior-campaign "already Black-Thorn-cursed" status — see
+      dnd/CLAUDE.md principle 1, world/ is reference only): **Maghiel is NOT yet cursed.**
+      She becomes so only after the events of scenarios/mishap-at-durgans-rest.md, where she
+      steals the Clasp of Vergren from Tsendur (unknowingly a sealed Black Thorn splinter —
+      thread:the-thorn) and is pierced by it studying the theft off-screen. The party's own
+      letter may be what puts her on Durgan's Rest's map — deliberately left ambiguous, but
+      real complicity, not just Tath'Shar's personal stake. NOT to be revealed to the party
+      outright until that session plays out.
+    autonomous:
+      - "Off-screen for now. Advances hard once the party carries Elmingwed's letter to Tsendur at Durgan's Rest — see scenarios/mishap-at-durgans-rest.md for the scripted outcome (Maghiel must escape with the Clasp)."
 
   - id: thread:maghiel-nascent
     title: "Maghiel, just beginning"
